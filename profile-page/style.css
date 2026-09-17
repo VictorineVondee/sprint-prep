@@ -1,0 +1,233 @@
+/* ===== General Styles ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7fafa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+
+header {
+    background-color: #1f8a8a;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* ===== Navigation ===== */
+
+nav {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #1f8a8a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f26a2e;
+}
+
+/* ===== Main Content ===== */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #1f8a8a;
+    margin-top: 0;
+}
+
+/* ===== About Section ===== */
+
+#about img {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    margin: 1.5rem auto 0;
+    border-radius: 50%;
+}
+
+/* ===== Skills Cards ===== */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-card {
+    flex: 1 1 180px;
+    background-color: #f7fafa;
+    border-left: 4px solid #f26a2e;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #1f8a8a;
+}
+
+/* ===== Goals ===== */
+
+#goals ul {
+    padding-left: 1.5rem;
+}
+
+/* ===== Study Plan ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1f8a8a;
+    color: white;
+}
+
+/* ===== Contact Form ===== */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #1f8a8a;
+    border-color: #1f8a8a;
+}
+
+button {
+    background-color: #1f8a8a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f26a2e;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: #1f8a8a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 0.6rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
